@@ -18,4 +18,14 @@
 .toolbar-search {
   float: right;
 }
+
+.toolbar {
+  background-color: #dcdadc;
+}
+.toolbar-button {
+  background-color: #ffffff;
+}
+.toolbar-button:active {
+  background-color: #aaaaaa;
+}
 </style>
