@@ -5,6 +5,7 @@
       v-bind:key="note.id"
       v-bind:note="note"
       v-bind:selectedNoteId="selectedNoteId"
+      v-on:selectNote="changeSelectedNoteId(note)"
     />
   </div>
 </template>
@@ -26,6 +27,11 @@ export default {
       ],
       selectedNoteId: 1,
     };
+  },
+  methods: {
+    changeSelectedNoteId: function (note) {
+      this.selectedNoteId = note.id;
+    },
   },
 };
 </script>
